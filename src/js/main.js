@@ -1,3 +1,5 @@
+import bodyScrollLockUpgrade from './body-scroll-lock-upgrade.js';
+
 const btnOpen = document.querySelector('#btnOpen');
 const btnClose = document.querySelector('#btnClose');
 const media = window.matchMedia('(max-width: 48em)');
