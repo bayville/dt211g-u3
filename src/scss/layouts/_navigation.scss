@@ -1,0 +1,68 @@
+.mainnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1.5rem;
+  
+    button {
+      background: none;
+      border: none;
+      padding: 0;
+    
+      @media (width >= 48em) {
+        display: none;
+      }
+    }
+    
+    &__open {
+      font-size: 2rem;
+  
+      &[aria-expanded='true'] + .mainnav__menu {
+        opacity: 1;
+      }
+    }
+  
+    &__close {
+      display: block;
+      margin-inline-start: auto;
+      margin-block-end: 8rem;
+      color: white;
+
+        > i {
+          font-size: 3rem;
+        }
+    }
+  
+    &__menu {
+      @media (width < 48em) {
+        position: fixed;
+        inset: 0;
+        padding: 1.5rem;
+        background-color: hsl(256, 100%, 33%);
+        opacity: 0;
+        transition: all 0.1s ease-in-out;
+      }
+    }
+  
+    &__links {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+  
+      @media (width < 48em) {
+        flex-direction: column;
+      }
+    }
+  
+    &__item {
+        list-style-type: none;
+    }
+    &__link {
+        @media (width < 48em) {
+            color: white;
+        }
+      }
+    
+  }
