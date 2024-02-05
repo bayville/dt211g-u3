@@ -5,9 +5,3 @@
 @use 'layouts';
 @use 'pages';
 @use 'themes';
-
-.container--l {
-    width: min(100% - 0.8rem, 1440px);
-    margin-inline: auto;
-    border: 1px solid red;
-  }

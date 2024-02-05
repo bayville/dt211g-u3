@@ -1,0 +1,6 @@
+@use '../abstracts/' as a;
+
+body{
+    background-color: a.$primary-bg;
+    color: a.$primary-text;
+}

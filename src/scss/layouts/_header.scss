@@ -1,0 +1,11 @@
+@use '../abstracts/' as *;
+
+header{
+    background-color: $primary-text;
+    color: $white-color;
+
+    a {
+        color: $white-color;
+        text-decoration: none;
+    }
+}
