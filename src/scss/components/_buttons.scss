@@ -5,14 +5,23 @@
     border-radius: a.$base-border-radius;
     border: transparent;
     cursor: pointer;   
+    color: a.isColorDark(a.$primary-text);
+
+    &:hover{
+        color: a.isColorDark(a.$primary-text);
+        background: lighten(a.$primary-text, 10%);
+    }
 
     &__primary{
         @extend .btn;
         background: a.$primary-text;
-        color: a.isColorDark(a.$primary-text);
-            &:hover{
-                background: lighten(a.$primary-text, 10%);
-            }
+    }
+
+    &__secondary{
+        @extend .btn;
+        background-color: transparent;
+        border: 1px solid a.$primary-text;
+        color: a.$primary-text;
     }
 }
 
