@@ -1,5 +1,7 @@
+@use '../abstracts/' as a;
+
 .container--l {
-    width: min(100% - 0.8rem, 1440px);
+    width: min(100% - 2rem, a.$max-content-width);
     margin-inline: auto;
   }
 

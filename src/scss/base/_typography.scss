@@ -1,33 +1,25 @@
-html{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
 $base-font-size: 1rem;
+$font-size-h1: $base-font-size * 2.7;
+$font-size-h2: $base-font-size * 2.4;
+$font-size-h3: $base-font-size * 2;
+$font-size-h4: $base-font-size * 1.7;
+$font-size-h5: $base-font-size * 1.4;
+$font-size-h6: $base-font-size * 1.2;
+$font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+html{font-family: $font-family}
 
 p{
     font-size: $base-font-size;
+    max-width: 70ch;
+    line-height: $base-font-size * 1.5;
 }
 
-h1{
-    font-size: $base-font-size * 2.7;
-}
+h1{ font-size: $font-size-h1; margin:0; }
+h2{ font-size: $font-size-h2; margin:0; }
+h3{ font-size: $font-size-h3; margin:0; }
+h4{ font-size: $font-size-h4; margin:0; }
+h5{ font-size: $font-size-h5; margin:0; }
+h6{ font-size: $font-size-h6; margin:0; }
 
-h2{
-    font-size: $base-font-size * 2.4;
-}
-
-h3{
-    font-size: $base-font-size * 2;
-}
-
-h4{
-    font-size: $base-font-size * 1.7;
-}
-
-h5{
-    font-size: $base-font-size * 1.4;
-}
-
-h6{
-    font-size: $base-font-size * 1.2;
-}

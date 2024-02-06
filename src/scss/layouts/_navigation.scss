@@ -58,8 +58,7 @@
     }
   
     &__item {
-        list-style-type: none;
-        margin-block: 0.5rem;
+        @include a.reset-list;
     }
     &__link {
         @media (width < a.$breakpoint-m) {

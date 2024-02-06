@@ -1,0 +1,18 @@
+@use '../abstracts/' as a;
+
+.btn{
+    padding: a.$button-padding;
+    border-radius: a.$base-border-radius;
+    border: transparent;
+    cursor: pointer;   
+
+    &__primary{
+        @extend .btn;
+        background: a.$primary-text;
+        color: a.isColorDark(a.$primary-text);
+            &:hover{
+                background: lighten(a.$primary-text, 10%);
+            }
+    }
+}
+
