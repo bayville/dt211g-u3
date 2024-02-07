@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css">
     <link rel="stylesheet" href="scss/styles.scss">
     <script type="module" src="js/main.js"></script>
-
 </head>
 <body>
     <header>
@@ -42,9 +41,27 @@
           </div>
         </nav>
     </div>
-      </header>
+    </header>
     <main class="container--l">
-        <article class="card__flow">
+        <div class="grid__auto section">
+          <!-- Card 1 -->
+          <article class="card__flow">
+              <picture>
+                <source type="image/avif" srcset="img/bild_1.jpg?as=avif&width=800&height=450">
+                <source type="image/webp" srcset="img/bild_1.jpg?as=webp&width=800&height=450">
+                <source type="image/jpeg" srcset="img/bild_1.jpg?width=800&height=450">
+                <img src="img/bild_1.jpg?width=450&height=450" fetchpriority="high" width="800" height="450" alt="Kaffe">
+              </picture>
+              <div>
+                <h2>Fakta om kaffe</h2>
+                <p> Sverige är känt för sin höga konsumtion av kaffe.
+                  I genomsnitt dricker en svensk omkring 3-4 koppar kaffe per dag, vilket gör Sverige till ett av de länder med högst
+                  kaffekonsumtion per capita.</p>
+              </div>
+              <div><button class="btn__primary">Läs mer</button></div>
+          </article>
+          <!-- Card 2 -->
+          <article class="card__flow">
             <picture>
               <source type="image/avif" srcset="img/bild_1.jpg?as=avif&width=800&height=450">
               <source type="image/webp" srcset="img/bild_1.jpg?as=webp&width=800&height=450">
@@ -56,10 +73,49 @@
               <p> Sverige är känt för sin höga konsumtion av kaffe.
                 I genomsnitt dricker en svensk omkring 3-4 koppar kaffe per dag, vilket gör Sverige till ett av de länder med högst
                 kaffekonsumtion per capita.</p>
-                <button class="btn__primary">Läs mer</button>
-                <button class="btn__secondary">Läs mer</button>
             </div>
-        </article>
+            <div>
+              <button class="btn__primary">Läs mer</button>
+            </div>
+          </article>
+          <!-- Card 3 -->
+          <article class="card__flow">
+            <picture>
+              <source type="image/avif" srcset="img/bild_1.jpg?as=avif&width=800&height=450">
+              <source type="image/webp" srcset="img/bild_1.jpg?as=webp&width=800&height=450">
+              <source type="image/jpeg" srcset="img/bild_1.jpg?width=800&height=450">
+              <img src="img/bild_1.jpg?width=450&height=450" fetchpriority="high" width="800" height="450" alt="Kaffe">
+            </picture>
+            <div>
+              <h2>Fakta om kaffe</h2>
+              <p> Sverige är känt för sin höga konsumtion av kaffe.
+                I genomsnitt dricker en svensk omkring 3-4 koppar kaffe per dag, vilket gör Sverige till ett av de länder med högst
+                kaffekonsumtion per capita.</p>
+            </div>
+            <div>
+              <button class="btn__primary">Läs mer</button>
+            </div>
+          </article>
+          <!-- Card 4 -->
+          <article class="card__flow">
+            <picture>
+              <source type="image/avif" srcset="img/bild_1.jpg?as=avif&width=800&height=450">
+              <source type="image/webp" srcset="img/bild_1.jpg?as=webp&width=800&height=450">
+              <source type="image/jpeg" srcset="img/bild_1.jpg?width=800&height=450">
+              <img src="img/bild_1.jpg?width=450&height=450" fetchpriority="high" width="800" height="450" alt="Kaffe">
+            </picture>
+            <div>
+              <h2>Fakta om kaffe</h2>
+              <p> Sverige är känt för sin höga konsumtion av kaffe.
+                I genomsnitt dricker en svensk omkring 3-4 koppar kaffe per dag, vilket gör Sverige till ett av de länder med högst
+                kaffekonsumtion per capita.</p>
+            </div>
+            <div>
+              <button class="btn__primary">Läs mer</button>
+              <button class="btn__secondary">Läs mer</button>
+            </div>
+          </article>
+        </div>
     </main>
 </body>
 </html>

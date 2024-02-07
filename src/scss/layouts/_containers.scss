@@ -9,3 +9,7 @@
     width: min(100%, 700px);
     margin-inline: auto;
   }
+
+  .section{
+    margin-block: a.$section-margin ;
+  }

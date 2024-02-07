@@ -1,7 +1,7 @@
 @use '../abstracts/' as a;
 
 header{
-    background-color: a.$primary-text;
+    background-color: a.$primary-dark;
     color: a.$white-color;
     padding-block: a.$base-padding;
 

@@ -1,7 +1,9 @@
-@function isColorDark( $color ) {
+@use 'variables' as a;
+
+@function colorCheck( $color ) {
     @if ( lightness($color) > 50 ) {
-      @return #000000; 
+      @return a.$primary-dark; 
     } @else {
-      @return #ffffff; 
+      @return a.$primary-light; 
     }
   }

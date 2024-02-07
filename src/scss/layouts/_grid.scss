@@ -1,0 +1,15 @@
+@use '../abstracts/' as a;
+
+.grid{
+    display: grid;
+    gap: 2rem;
+    
+    &__auto{
+        @extend .grid;
+        grid-template-columns: repeat( auto-fit, minmax(calc(300px), 1fr) );
+        
+        @media (width < a.$breakpoint-m) {
+            grid-template-columns: repeat( auto-fit, minmax(100%, 1fr) );
+        }
+    }
+}

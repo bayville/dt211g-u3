@@ -1,0 +1,33 @@
+@use '../abstracts/' as a;
+
+.card {
+    background-color: a.$white-color;
+    border-radius: a.$base-border-radius;
+    max-width: 400px;
+        @include a.tablet {
+            max-width: a.$breakpoint-m;
+        }
+        img{
+            border-top-left-radius:  a.$base-border-radius;
+            border-top-right-radius: a.$base-border-radius;
+        }
+        div{
+            padding: a.$base-padding;
+            padding-top: 0;
+        }
+        h2{
+            margin: 0;
+        }
+
+        &__flow{
+            @extend .card;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        @include a.dark-mode{
+            background-color: a.$accent-color;
+            color: a.colorCheck(a.$accent-color);
+        }
+}

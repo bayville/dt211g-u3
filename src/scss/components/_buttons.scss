@@ -5,23 +5,64 @@
     border-radius: a.$base-border-radius;
     border: transparent;
     cursor: pointer;   
-    color: a.isColorDark(a.$primary-text);
+    color: a.colorCheck(a.$primary-dark);
 
     &:hover{
-        color: a.isColorDark(a.$primary-text);
-        background: lighten(a.$primary-text, 10%);
+        color: a.colorCheck(a.$primary-dark);
+        background: lighten(a.$primary-dark, 10%);
     }
 
     &__primary{
         @extend .btn;
-        background: a.$primary-text;
+        background: a.$primary-dark;
     }
 
     &__secondary{
         @extend .btn;
         background-color: transparent;
-        border: 1px solid a.$primary-text;
-        color: a.$primary-text;
+        border: 1px solid a.$primary-dark;
+        color: a.$primary-dark;
+    }
+
+    &__disabled{
+        @extend .btn;
+        background-color: lighten(a.$primary-dark, 70%);
+        color: a.colorCheck(lighten(a.$primary-dark, 70%));
+        cursor: auto;
+        
+            &:hover{
+                background-color: lighten(a.$primary-dark, 70%);
+                color: a.colorCheck(lighten(a.$primary-dark, 70%));
+            }
+
     }
 }
 
+@include a.dark-mode {
+    .btn{
+        color: a.colorCheck(a.$primary-light);
+    
+        &:hover{
+            color: a.colorCheck(darken(a.$primary-light, 10%));
+            background: darken(a.$primary-light, 10%);
+        }
+    
+        &__primary{
+            background: a.$primary-light;
+        }
+    
+        &__secondary{
+            background-color: transparent;
+            border: 1px solid a.$primary-light;
+            color: a.$primary-light;
+        }
+
+        &__disabled{
+        
+                &:hover{
+                    background-color: lighten(a.$primary-dark, 70%);
+                    color: a.colorCheck(lighten(a.$primary-dark, 70%));
+                }
+        }
+    }      
+}

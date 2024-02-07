@@ -1,23 +1,2 @@
 @use '../abstracts/' as a;
 
-.card {
-    &__flow{
-        display: flex;
-        justify-content: space-between;
-        gap: 2rem;
-        // padding-block: a.$section-padding;
-        margin-block: a.$section-padding;
-
-            h2{
-                margin: 0;
-            }
-        
-            @media (width < a.$breakpoint-m) {
-                flex-direction: column;
-
-                &:nth-child(even){
-                    flex-direction: column-reverse;
-                }
-            }  
-    }
-}

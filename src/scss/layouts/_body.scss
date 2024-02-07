@@ -1,6 +1,9 @@
 @use '../abstracts/' as a;
 
 body{
-    background-color: a.$primary-bg;
-    color: a.$primary-text;
+    @include a.color-scheme(a.$scheme-default...);
+
+    @include a.dark-mode{
+        @include a.color-scheme(a.$scheme-dark...);
+    }
 }
