@@ -9,4 +9,9 @@ header{
         color: a.$white-color;
         text-decoration: none;
     }
+
+    @include a.dark-mode{
+        background-color: darken(a.$accent-color-darkm, 30%);
+        color: a.colorCheck(darken(a.$accent-color-darkm, 30%));
+    }
 }

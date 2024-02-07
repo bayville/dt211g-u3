@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DT211G - U3</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="scss/styles.scss">
+    <script type="module" src="js/main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="mainnav container--l">
+        <h1><a href="/">Kaffe & Sass</a></h1>
+        <nav>
+          <span id="nav-label" hidden>Navigation</span>
+          <button id="btnOpen" class="mainnav__open" aria-expanded="false" aria-labelledby="nav-label">
+            <i class="ri-menu-line"></i>
+          </button>
+          <div class="mainnav__menu" role="dialog" aria-labelledby="nav-label">
+            <button class="mainnav__close" id="btnClose" aria-label="Close">
+                <i class="ri-close-line"></i>
+            </button>
+            <ul class="mainnav__links">
+                <li class="mainnav__item">
+                  <a href="/" class="mainnav__link">Hem</a>
+                </li>
+                <li class="mainnav__item">
+                  <a href="./sass.html" class="mainnav__link__active">Sass</a>
+                </li>
+                <li class="mainnav__item">
+                  <a href="" class="mainnav__link">Placeholder</a>
+                </li>
+                <li class="mainnav__item">
+                  <a href="" class="mainnav__link">Placeholder</a>
+                </li>
+                <li class="mainnav__item">
+                  <a href="" class="mainnav__link">Placeholder</a>
+                </li>
+              </ul>
+          </div>
+        </nav>
+    </div>
+    </header>
+    <main>
+      <picture>
+        <source type="image/avif" srcset="img/bild_1.jpg?as=avif&width=1440&height=500">
+        <source type="image/webp" srcset="img/bild_1.jpg?as=webp&width=1440&height=500">
+        <source type="image/jpeg" srcset="img/bild_1.jpg?width=1440&height=500">
+        <img src="img/bild_1.jpg?width=450&height=450" fetchpriority="high" width="1440" height="500" alt="Kaffe">
+      </picture>
+      <article class="container--l">
+        <div class="container--m section">
+          <h2>Om sass</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque corporis rerum corrupti recusandae fuga nemo exercitationem iure! Ea natus officiis, harum facilis, iusto tenetur, facere fugit delectus quam dolorum aliquam excepturi temporibus voluptate. Architecto molestias incidunt ab sit enim corporis asperiores in totam nulla? In sed vel, expedita necessitatibus ex culpa ipsam tempora molestias deserunt modi alias odio eligendi quas sit, inventore provident molestiae ipsum dolorem rerum, accusantium natus minima? Facilis neque sunt porro impedit repellat ex dicta esse saepe necessitatibus, dolore laborum repellendus inventore ad distinctio dolorem nihil quibusdam iste vitae aliquid ut earum dolorum. Voluptatibus rem libero cumque repudiandae odit corporis magni perspiciatis porro modi ducimus optio, deserunt expedita, veritatis quia molestiae quas! Magnam perspiciatis officiis optio reprehenderit neque at quidem, nulla inventore nihil reiciendis. Laboriosam dolorum quibusdam quasi necessitatibus corporis, hic natus asperiores reprehenderit repudiandae atque libero. Nesciunt dolores eius soluta possimus eos saepe corporis atque, accusantium sint quod vitae explicabo deserunt reprehenderit voluptatibus placeat accusamus maxime quam numquam magnam consectetur labore ea aperiam in! Excepturi repudiandae quasi doloremque recusandae! Voluptatem quas deleniti blanditiis. Amet, rerum facilis. Consectetur quibusdam iusto omnis recusandae earum ad eaque sunt, veritatis sed minima delectus rerum hic praesentium ullam provident voluptates similique!</p>
+      </div>
+    </article>
+    </main>
+</body>
+</html>

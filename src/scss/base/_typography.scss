@@ -22,10 +22,12 @@ p{
     font-family: $font-family;
     max-width: 70ch;
     line-height: $base-font-size * 1.5;
+    margin-top: 0.5rem;
 }
 
 h1,h2,h3,h4,h5,h6{
     font-family: $heading-font-family;
+    letter-spacing: 2;
 }
 
 

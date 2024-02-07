@@ -3,7 +3,7 @@
 .btn{
     padding: a.$button-padding;
     border-radius: a.$base-border-radius;
-    border: transparent;
+    border:2px solid transparent;
     cursor: pointer;   
     color: a.colorCheck(a.$primary-dark);
 
@@ -20,21 +20,13 @@
     &__secondary{
         @extend .btn;
         background-color: transparent;
-        border: 1px solid a.$primary-dark;
+        border:2px solid a.$accent-color-secondary ;
         color: a.$primary-dark;
-    }
-
-    &__disabled{
-        @extend .btn;
-        background-color: lighten(a.$primary-dark, 70%);
-        color: a.colorCheck(lighten(a.$primary-dark, 70%));
-        cursor: auto;
-        
+         
             &:hover{
-                background-color: lighten(a.$primary-dark, 70%);
-                color: a.colorCheck(lighten(a.$primary-dark, 70%));
+                background-color: a.$accent-color-secondary;
+                color: a.colorCheck(a.$accent-color-secondary);
             }
-
     }
 }
 
@@ -43,8 +35,8 @@
         color: a.colorCheck(a.$primary-light);
     
         &:hover{
-            color: a.colorCheck(darken(a.$primary-light, 10%));
-            background: darken(a.$primary-light, 10%);
+            color: a.colorCheck(lighten(a.$primary-light-darkm, 10%));
+            background: lighten(a.$primary-light-darkm, 10%);
         }
     
         &__primary{
@@ -53,16 +45,12 @@
     
         &__secondary{
             background-color: transparent;
-            border: 1px solid a.$primary-light;
-            color: a.$primary-light;
-        }
-
-        &__disabled{
-        
-                &:hover{
-                    background-color: lighten(a.$primary-dark, 70%);
-                    color: a.colorCheck(lighten(a.$primary-dark, 70%));
-                }
+            border:2px solid a.$accent-color-secondary-darkm ;
+            color: a.colorCheck(darken(a.$accent-color-darkm, 30%));
+            &:hover{
+                background-color: a.$accent-color-secondary;
+                color: a.colorCheck(a.$accent-color-secondary);
+            }
         }
     }      
 }

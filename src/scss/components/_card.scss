@@ -27,7 +27,7 @@
         }
 
         @include a.dark-mode{
-            background-color: a.$accent-color;
-            color: a.colorCheck(a.$accent-color);
+            background-color: darken(a.$accent-color-darkm, 30%);
+            color: a.colorCheck(darken(a.$accent-color-darkm, 30%));
         }
 }
