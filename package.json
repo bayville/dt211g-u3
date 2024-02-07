@@ -4,7 +4,8 @@
   "description": "Uppgift 3 till kursen DT211G",
   "source": "src/index.html",
   "scripts": {
-    "dev": "parcel --host 192.168.50.92 --open chrome",
+    "cleanup": "rmdir /q /s .parcel-cache dist",
+    "dev": "npm run cleanup && parcel --host 192.168.50.92 --open chrome",
     "build": "parcel build"
   },
   "author": "Fredrik Eklund",

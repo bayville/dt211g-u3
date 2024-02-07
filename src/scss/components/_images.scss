@@ -1,0 +1,14 @@
+@use '../abstracts/' as a;
+
+img{
+    width: 100%;
+    height: auto;
+  }
+
+.img__full-width{
+    @include a.tablet{
+        height: 40vh;
+        object-fit: cover;
+        object-position: center;
+    }
+}

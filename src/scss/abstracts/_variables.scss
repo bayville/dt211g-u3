@@ -1,22 +1,20 @@
 $primary-light: #EEEBE1; //BG
 $primary-dark: #30271C; //Text 
 $accent-color: #C7A17A; //Accent
-$accent-color-secondary: #d21014;
+$accent-color-secondary: #d21014; //Accent2
 $white-color: #fff;
 
 
 $primary-light-darkm: #30271C; //BG
 $primary-dark-darkm: #EEEBE1; //Text 
 $accent-color-darkm: #C7A17A; //Accent
-$accent-color-secondary-darkm: #d21014;
+$accent-color-secondary-darkm: #d21014; //Accent2
 $white-color-darkm: #fff;
-
-
 
 
 // Quick scheme used for text/bg, called with mixin color-scheme.
 $scheme-default: $primary-light, $primary-dark;
-$scheme-dark: $primary-dark, $primary-light;
+$scheme-dark: $primary-light-darkm, $primary-dark-darkm;
 
 
 //Padding/Margin
