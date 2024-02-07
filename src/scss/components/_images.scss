@@ -6,9 +6,10 @@ img{
   }
 
 .img__full-width{
+    max-height: 40vh;
+    object-fit: cover;
+    object-position: center;
     @include a.tablet{
         height: 40vh;
-        object-fit: cover;
-        object-position: center;
     }
 }
