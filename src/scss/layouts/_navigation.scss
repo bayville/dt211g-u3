@@ -18,6 +18,7 @@
     &__open {
       font-size: 2rem;
       color: a.$white-color;
+      cursor: pointer;
   
       &[aria-expanded='true'] + .mainnav__menu {
         opacity: 1;
@@ -29,6 +30,7 @@
       margin-inline-start: auto;
       margin-block-end: 8rem;
       color: a.$white-color;
+      cursor: pointer;
 
         > i {
           font-size: 3rem;
