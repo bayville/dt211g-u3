@@ -1,0 +1,45 @@
+@use '../abstracts/' as a;
+
+:root {
+ --racetime: 2s;
+}
+
+.car{
+    position: absolute;
+    height: 10dvh;
+    width: 20dvw;
+    right: 90%;
+    animation: carRace var(--racetime) forwards ease-in-out;
+}
+
+#road{
+    position: relative;
+    width: 100%;
+}
+
+#car1{
+    @extend .car;
+    top:0;
+    
+}
+#car2 {
+    @extend .car;
+    top: 50%;
+}
+
+
+.animations{
+    transition: all 0.3s ease-in-out;
+    
+    img{
+    @extend .animations;
+    box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.2);
+    filter: blur(1px);
+    
+        &:hover{
+            transform:  scale(1.1) translateY(-1rem);
+            box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.9);
+            filter: blur(0px);
+        }
+    }
+}

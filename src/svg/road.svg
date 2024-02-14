@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="1400" height="298.87" viewBox="0 0 1400 298.87">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-family: NHLPhoenix, 'NHL Phoenix';
+        font-size: 66px;
+      }
+
+      .cls-3 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-5 {
+        fill: #495058;
+        stroke-width: 0px;
+      }
+
+      .cls-6 {
+        letter-spacing: -.09em;
+      }
+
+      .cls-7 {
+        letter-spacing: -.11em;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <rect class="cls-5" width="1400" height="298.87"/>
+    <text class="cls-2" transform="translate(234.81 53.31) rotate(90)"><tspan class="cls-3" x="0" y="0">S</tspan><tspan class="cls-7" x="32.41" y="0">T</tspan><tspan x="64.22" y="0">A</tspan><tspan class="cls-6" x="113.25" y="0">R</tspan><tspan x="152.85" y="0">T</tspan></text>
+    <text class="cls-2" transform="translate(1291.41 45.06) rotate(90)"><tspan x="0" y="0">FIN</tspan><tspan class="cls-1" x="101.04" y="0">I</tspan><tspan x="122.1" y="0">SH</tspan></text>
+    <line class="cls-4" x1="1271.94" y1="46.8" x2="1271.94" y2="252.07"/>
+    <line class="cls-4" x1="315.64" y1="46.8" x2="315.64" y2="252.07"/>
+  </g>
+</svg>

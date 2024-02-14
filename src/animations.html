@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DT211G - U3</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="scss/styles.scss">
+    <script type="module" src="js/main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="mainnav container--l">
+        <h1><a href="/">Kaffe & Sass</a></h1>
+        <nav>
+          <span id="nav-label" hidden>Navigation</span>
+          <button id="btnOpen" class="mainnav__open" aria-expanded="false" aria-labelledby="nav-label">
+            <i class="ri-menu-line"></i>
+          </button>
+          <div class="mainnav__menu" role="dialog" aria-labelledby="nav-label">
+            <button class="mainnav__close" id="btnClose" aria-label="Close">
+                <i class="ri-close-line"></i>
+            </button>
+            <ul class="mainnav__links">
+                <li class="mainnav__item">
+                  <a href="/" class="mainnav__link">Hem</a>
+                </li>
+                <li class="mainnav__item">
+                  <a href="./sass.html" class="mainnav__link">Sass</a>
+                </li>
+                <li class="mainnav__item">
+                  <a href="./animations.html" class="mainnav__link__active">Animations</a>
+                </li>
+                <li class="mainnav__item">
+                  <a href="#" class="mainnav__link">Placeholder</a>
+                </li>
+                <li class="mainnav__item">
+                  <a href="#" class="mainnav__link">Placeholder</a>
+                </li>
+              </ul>
+          </div>
+        </nav>
+    </div>
+    </header>
+    <main>
+        <div id="road">
+          <img src="svg/road.svg" alt="" >
+          <div id="car1"><img src="svg/car_blue.svg" alt="" ></div>
+          <div id="car2"><img src="svg/car_red.svg" alt="" ></div>
+        </div>
+        <article class="container--l">
+          <div class="container--m section">
+            <h2>Dragracing</h2>
+            <p>Två bilar som tävlar mot varandra i dragracing. Tiden för animationen för de båda bilarna slumpas fram varje gång man laddar om sidan.
+            </p>
+            <p id="car1Text"><strong>Tid blå bil:</strong> </p>
+            <p id="car2Text"><strong>Tid röd bil:</strong> </p>
+        </div>
+      </article>
+      <article class="container--l">
+        <div class="container--m section">
+          <h2>Animationer på webbplatsen</h2>
+          <ul>
+            <li>Texten som fungerar som logotyp ändrar färg med hjälp av keyframes.</li>
+            <li>Bilarna åker på vägen från vänster till höger med hjälp av keyframes.</li>
+            <li>Bilderna nedan animeras med hjälp av transition och transform.</li>
+            <li>Knapparna på sidan hem, animeras med transition.</li>
+          </ul>
+      </div>
+    </article>
+      <div class="container--l grid__auto section animations">
+        <picture>
+          <source type="image/avif" srcset="img/bild_1.jpg?as=avif&width=800&height=450">
+          <source type="image/webp" srcset="img/bild_1.jpg?as=webp&width=800&height=450">
+          <source type="image/jpeg" srcset="img/bild_1.jpg?width=800&height=450">
+          <img src="img/bild_1.jpg?width=450&height=450" fetchpriority="high" width="800" height="450" alt="Kaffe">
+        </picture>
+        <picture>
+          <source type="image/avif" srcset="img/bild_2.jpg?as=avif&width=800&height=450">
+          <source type="image/webp" srcset="img/bild_2.jpg?as=webp&width=800&height=450">
+          <source type="image/jpeg" srcset="img/bild_2.jpg?width=800&height=450">
+          <img src="img/bild_2.jpg?width=450&height=450" fetchpriority="high" width="800" height="450" alt="Kaffe">
+        </picture>
+        <picture>
+          <source type="image/avif" srcset="img/bild_3.jpg?as=avif&width=800&height=450">
+          <source type="image/webp" srcset="img/bild_3.jpg?as=webp&width=800&height=450">
+          <source type="image/jpeg" srcset="img/bild_3.jpg?width=800&height=450">
+          <img src="img/bild_3.jpg?width=450&height=450" fetchpriority="high" width="800" height="450" alt="Kaffe">
+        </picture>
+        <picture>
+          <source type="image/avif" srcset="img/bild_4.jpg?as=avif&width=800&height=450">
+          <source type="image/webp" srcset="img/bild_4.jpg?as=webp&width=800&height=450">
+          <source type="image/jpeg" srcset="img/bild_4.jpg?width=800&height=450">
+          <img src="img/bild_4.jpg?width=450&height=450" fetchpriority="high" width="800" height="450" alt="Kaffe">
+        </picture>
+      </div>
+    </main>
+</body>
+</html>

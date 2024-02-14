@@ -10,6 +10,13 @@ header{
         text-decoration: none;
     }
 
+    h1{
+        a{
+            animation: textColorPulse 5s infinite alternate backwards;
+        }
+        
+    }
+
     @include a.dark-mode{
         background-color: darken(a.$accent-color-darkm, 30%);
         color: a.colorCheck(darken(a.$accent-color-darkm, 30%));

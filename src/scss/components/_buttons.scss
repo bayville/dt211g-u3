@@ -6,6 +6,7 @@
     border:2px solid transparent;
     cursor: pointer;   
     color: a.colorCheck(a.$primary-dark);
+    transition: 0.2s;
 
     &:hover{
         color: a.colorCheck(a.$primary-dark);
