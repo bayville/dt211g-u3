@@ -13,6 +13,10 @@
         background: lighten(a.$primary-dark, 10%);
     }
 
+    &:active{
+        transform: translateY(-3px);
+    }
+
     &__primary{
         @extend .btn;
         background: a.$primary-dark;
