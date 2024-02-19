@@ -44,12 +44,12 @@ function filterData (data){
   });
   
   // Slice the array to only get the first 6 courses and split into
-  topSixCoursesName = filteredCourseData.slice(0,6).map(course => course.name); //Put the names into an array
-  topSixCoursesData = filteredCourseData.slice(0,6).map(course => parseInt(course.applicantsTotal)); // Put the number of applicants in an array
+  const topSixCoursesName = filteredCourseData.slice(0,6).map(course => course.name); //Put the names into an array
+  const topSixCoursesData = filteredCourseData.slice(0,6).map(course => parseInt(course.applicantsTotal)); // Put the number of applicants in an array
   renderBarChart(topSixCoursesName, topSixCoursesData, barChart); //Call the render barcharts function
 
-  topSixProgramName = filteredProgramData.slice(0,6).map(program => program.name); //Put the names into an array
-  topSixProgramData = filteredProgramData.slice(0,6).map(program => parseInt(program.applicantsTotal)); // Put the number of applicants in an array
+  const topSixProgramName = filteredProgramData.slice(0,6).map(program => program.name); //Put the names into an array
+  const topSixProgramData = filteredProgramData.slice(0,6).map(program => parseInt(program.applicantsTotal)); // Put the number of applicants in an array
   renderPieChart(topSixProgramName, topSixProgramData, pieChart); //Call the render piecharts function
 }
 
