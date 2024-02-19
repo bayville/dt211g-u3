@@ -143,6 +143,4 @@ new Chart(element, {
 
 if (barChart &&  pieChart){
 fetchCourses(url);
-} else {
-  console.log('no charts');
 }
