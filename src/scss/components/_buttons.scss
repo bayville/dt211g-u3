@@ -23,7 +23,7 @@
     }
 
     &__secondary{
-        
+        @extend .btn;
         background-color: transparent;
         border:2px solid a.$accent-color-secondary ;
         color: a.$primary-dark;

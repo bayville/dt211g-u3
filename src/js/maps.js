@@ -8,33 +8,32 @@ Leta efter vilket api som gäller för att kunna söka efter platser//
 Kolla om det finns/autocomplete/Sugesstions //
 */
 
-
-// Initialize and add the map
-let map;
+let map; // Initialize and add the map
 const locationEl = document.getElementById('location');
 const searchButton = document.getElementById('searchButton');
 const locationButton = document.getElementById('locationButton');
 const searchInput = document.getElementById('searchInput');
 
-locationButton.addEventListener('click', getCurrentLocation);
-searchButton.addEventListener('click', searchLocation);
-searchInput.addEventListener('keypress', event => {
-  // Check if the pressed key is Enter (key code 13)
-  if (event.key === 'Enter') {
-      // Call the search function
-      searchLocation();
-}});
   
+if (locationEl && searchButton && locationButton && searchInput){
+    locationButton.addEventListener('click', getCurrentLocation);
+    searchButton.addEventListener('click', searchLocation);
+    searchInput.addEventListener('keypress', event => {
+      // Check if the pressed key is Enter (key code 13)
+      if (event.key === 'Enter') {
+          // Call the search function
+          searchLocation();
+    }});
 
-if (navigator.geolocation){
-  console.log("Navigator.geolocations exists");
-  getCurrentLocation();
-  
-} else {
-  console.log("Navigator.geolocation does not exists");
-  getLocationIP();
-}
-
+    if (navigator.geolocation){
+      console.log("Navigator.geolocations exists");
+      getCurrentLocation();
+      
+    } else {
+      console.log("Navigator.geolocation does not exists");
+      getLocationIP();
+    }
+  }
 
 // Get ip-adress and location based on ip-adress
 async function getLocationIP() {
