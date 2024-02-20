@@ -42,16 +42,18 @@
         </nav>
     </div>
     </header>
-    <main class="container--l">
-      <h3>My Google Maps Demo</h3>
-      <div class="map__search">
+    <main class="container--l section">
+     
+      <article class="map__search section">
+        <h2>Din postion eller valfri plats</h2>
         <input type="text" name="Search" id="searchInput">
-        <button id="searchButton">Sök</button>
-        <button id="locationButton">Hitta din plats</button>
-      </div>
+        <button id="searchButton" class="btn__primary">Sök</button>
+        <button id="locationButton" class="btn__secondary__filled">Hitta din plats</button>
+        <div id="location"></div>
+      </article>
       <!--The div element for the map -->
-      <div id="location"></div>
-      <div id="map"></div>  
+      
+      <div id="map" class="section"></div>  
 
     </main>
           <!-- prettier-ignore -->

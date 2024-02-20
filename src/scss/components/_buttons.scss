@@ -23,12 +23,18 @@
     }
 
     &__secondary{
-        @extend .btn;
+        
         background-color: transparent;
         border:2px solid a.$accent-color-secondary ;
         color: a.$primary-dark;
          
             &:hover{
+                background-color: a.$accent-color-secondary;
+                color: a.colorCheck(a.$accent-color-secondary);
+            }
+
+            &__filled{
+                @extend .btn;
                 background-color: a.$accent-color-secondary;
                 color: a.colorCheck(a.$accent-color-secondary);
             }
