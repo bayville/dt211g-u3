@@ -1,11 +1,10 @@
-
 let map; // Initialize and add the map
 const locationEl = document.getElementById('location'); //Get location element
 const searchButton = document.getElementById('searchButton'); //Get searchbutton
 const locationButton = document.getElementById('locationButton'); //Get location button
 const searchInput = document.getElementById('searchInput'); //Get search input
 
-// If elements exist create eventlisteners and check if navigaotr exists
+// If elements exist create eventlisteners and check if navigator exists
 if (locationEl && searchButton && locationButton && searchInput){
     locationButton.addEventListener('click', getCurrentLocation); //Listen for click on location button
     searchButton.addEventListener('click', searchLocation); //Listen fror click on search button
